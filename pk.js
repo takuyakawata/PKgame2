@@ -75,18 +75,12 @@ $("#submit_t").click(function () {
 
     selectedNumberT = parseInt($("#kajino_t").val());
     alert("シュートを押して！！");
+
     $("#player_btn_ta").prop("disabled", false);
     $(this).prop("disabled", true);
+
     $("#submit_k").removeClass("btn_off");
     $(this).addClass("btn_off");
-
-
-
-    
- 
-
-
-
 });
 
 
@@ -167,7 +161,7 @@ $("#player_btn_ta").click(function () {
 
         setTimeout(function () {
             $("#player_btn_ta_result").text("???");
-        }, 2500);
+        }, 3000);
        
 
         //ゴール数のカウントと表示
@@ -182,7 +176,7 @@ $("#player_btn_ta").click(function () {
             $(".k").hide(500);
             $(".t").hide(500);
             $(".c").show(500);
-setTimeout(function () {
+        setTimeout(function () {
             LastResult();
             }, 2000);
             
@@ -223,13 +217,13 @@ setTimeout(function () {
 // });
 $("#submit_k").click(function () {
     selectedNumberK = parseInt($("#kajino_k").val());
+    alert("シュートを押して！！");
 
     $("#player_btn_ka").prop("disabled", false);
     $(this).prop("disabled", true);
-    alert("シュートを押して！！");
+    
     $("#submit_t").removeClass("btn_off");
     $(this).addClass("btn_off");
-
 });
 
 
@@ -338,9 +332,9 @@ $("#player_btn_ka").click(function () {
             }, 2000);
     } else {
             setTimeout(function () {
-                $(".k").hide(500);
-                $(".t").show(500);
-            }, 5000);
+                $(".k").hide(300);
+                $(".t").show(300);
+            }, 2000);
     };
 
     
