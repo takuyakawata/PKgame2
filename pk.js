@@ -44,9 +44,9 @@ $(".k_money").text("1ドル");
 
     $("#kajino_k").append(`<option value="${i}">${i}</option>`);
 
-    $(`p[value=${i}t]`).prepend('<img class="soccer_ball_img" src="/img/soccer_ball-1.jpg" alt="サッカーボール">');
+    $(`p[value=${i}t]`).prepend('<img class="soccer_ball_img" src="img/soccer_ball-1.jpg" alt="サッカーボール">');
     
-    $(`p[value=${i}t] .soccer_ball_img`).hide('<img class="soccer_ball_img" src="/img/soccer_ball-1.jpg" alt="サッカーボール">');
+    $(`p[value=${i}t] .soccer_ball_img`).hide('<img class="soccer_ball_img" src="img/soccer_ball-1.jpg" alt="サッカーボール">');
 
 };
 
